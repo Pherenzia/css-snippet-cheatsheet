@@ -1,44 +1,88 @@
 * {
     font-family: sans-serif;
-    color: ;
-    background-color: rgb(46, 51, 51);
-    line-height: 1.5;
+    background-color: var(--darkest);
+    line-height: 150%;
+    font-size: 16px
 }
 
+:root {
+    --lightest: white;
+    --lighter: #ffa01191;
+    --mid:#ffa011;
+    --darkest: rgb(50, 52, 68);
+}
 h1, footer {
     text-align: center;
 }
 
 h1 + p {
     text-align: center;
-    color: white;
+    color: var(--lightest);
 }
 
+header {
+    color: var(--mid)
+}
 .container {
     position: relative;
 }
 
 .card {
-    border: dashed 2px white;
-    margin: 10px;
+    border: dashed 2px var(--lightest);
+    margin: 30px 10px 30px 10px;
     padding: 10px;
     position: relative;
 }
 
 .card header {
+    border: solid 2px var(--lightest);
+    border-radius: 10px;
+    font-size: 150%;
+    font-weight: bolder;
     position: absolute;
     top: -20px;
+    left: 10px;
+    right: 10px;
+    padding-left: 5px;
 }
 
-section header {
-    border: solid 2px white;
-    border-radius: 10px;
-    flex: 80%;
+.card p {
+    color: var(--lightest)
 }
 
 .area {
-    background: linear-gradient(#e66465, #9198e5);
-    margin: 10px;
+    background: linear-gradient(var(--mid),var(--lighter));
+    border-radius: 10px;
+    padding: 10px;
+    user-select: all;
+    color: var(--darkest);
+    font-family: monospace;
+    font-weight: 550;
 }
 
-.
+.card .card header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover, .card:hover header {
+    box-shadow: inset 0px 0px 8px yellow, 0 0 15px yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
